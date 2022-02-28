@@ -3,6 +3,7 @@
 // found in the LICENSE file.
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:startup_namer/pages/home_page.dart';
 import 'package:startup_namer/pages/login_page.dart';
 
@@ -16,8 +17,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(fontFamily: GoogleFonts.lato().fontFamily),
+      initialRoute: "/login",
       routes: {
-        "/": (context) => LoginPage(),
+        "/": (context) => HomePage(),
         "/login": (context) => LoginPage(),
       },
     );
