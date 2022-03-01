@@ -32,12 +32,18 @@ class LoginPage extends StatelessWidget {
                       hintText: 'Enter Username', labelText: 'Username'),
                 ),
                 TextFormField(
+                  obscureText: true,
                   decoration: InputDecoration(
                       hintText: 'Enter Password', labelText: 'Password'),
                 ),
               ],
             ),
-          )
+          ),
+          ElevatedButton(
+              onPressed: () {
+                print('Hi Kshitiz');
+              },
+              child: Text('Login')),
         ],
       ),
     );
